@@ -37,7 +37,7 @@ export const api = {
       throw new Error('Failed to fetch categories');
     }
   },
-
+  
   // Get single product
   getProduct: async (id: string): Promise<Product> => {
     try {
