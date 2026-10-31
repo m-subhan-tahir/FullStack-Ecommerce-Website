@@ -1,5 +1,8 @@
 import mongoose from "mongoose";
+import dns from "dns"; // 1. Import dns module
 
+// 2. Force Node to use Google Public DNS instead of your local ISP
+dns.setServers(["8.8.8.8", "8.8.4.4"]); 
 const connectDB = async () => {
   const uri = process.env.MONGODB_URL;
 
