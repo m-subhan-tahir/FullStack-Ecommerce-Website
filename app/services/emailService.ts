@@ -99,7 +99,7 @@ export const sendEmail = async (type: EmailType, options: EmailOptions) => {
           to: options.to,
           subject: "Password Reset Request",
           text: `Use this token to reset your password: ${resetToken}`,
-          html: `<p>Click <a href="${process.env.NEXT_PUBLIC_APP_URL}/auth/reset-password?token=${resetToken}">here</a> to reset your password.</p>`,
+          html: `<p>Click <a href="${process.env.NEXT_APP_URL}/auth/reset-password?token=${resetToken}">here</a> to reset your password.</p>`,
           resetToken, // Include token for further processing
         };
         break;

@@ -14,7 +14,7 @@ interface ShareModalProps {
 const ShareModal = ({ product }: ShareModalProps) => {
   const [copied, setCopied] = useState(false);
 
-  const shareUrl = `${process.env.NEXT_PUBLIC_APP_URL}/products/${product.id}`;
+  const shareUrl = `${process.env.NEXT_APP_URL}/products/${product.id}`;
 
 
   return (
